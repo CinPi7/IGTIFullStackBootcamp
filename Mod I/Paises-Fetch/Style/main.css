@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3e4e9;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #535353;;
+}

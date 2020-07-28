@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+body {
+	background-color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 5em auto;
+    color: #403f3d;
+    max-width: 920px;
+}

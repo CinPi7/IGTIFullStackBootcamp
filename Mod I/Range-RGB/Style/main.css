@@ -1,0 +1,14 @@
+:root{
+    --red: rgb(255,0,0);
+    --green: rgb(0,255,0);
+    --blue: rgb(0,0,255);
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}

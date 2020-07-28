@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Search Engine</title>
+
+    <link rel="shortcut icon" href="./Assets/user.png" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/search.css">
+    <link rel="stylesheet" href="./Styles/users.css">
+    <link rel="stylesheet" href="./Styles/media.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="intro"><h1>User Search</h1></div>
+        <!-- search bar -->
+        <div class="search-container">
+            <form action="" >
+                <div class="field-group"> 
+                    <div class="field">
+                        <label for="search"><span>Search</span></label>
+                        <input 
+                            type="text" 
+                            id="search"
+                            name="search"
+                            autocomplete="off" />
+                    </div>
+                    <div class="field">
+                        <button type="submit" id="searcher" class="btn-submit">
+                            <img class="finder" src="./Assets/finder.svg"></img>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- cards -->
+        <div class="boards">
+            <div class="cards reverse">
+                <h2><span id="foundUsers"></span></h2>
+                <div id="usersList"></div>
+            </div>
+            <div class="cards">
+                <h2><span id="foundStats"></span>Statistics</h2>
+                <div id="statsList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./Scripts/users.js"></script>
+</body>
+</html>

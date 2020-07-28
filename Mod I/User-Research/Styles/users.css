@@ -1,0 +1,43 @@
+div.boards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.boards div.cards{
+    margin: 1em;
+    padding: 2em;
+    width: 300px;
+    height: auto;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(129, 123, 126);
+    border-radius: 8px;
+    background-color: #b8dbdb;
+}
+div.boards div.cards h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Special Elite', cursive;
+    text-shadow: -1px -1px 1px rgb(194, 192, 192), 1px 1px 1px rgb(150, 149, 149);
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+.user:nth-child(1){
+    margin-top: 1.5em;
+}
+img{
+    margin-left: -0.5em;
+    margin-top: 1em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.nomes{
+    color: var(--default-color);
+}
+#statsList{
+    margin-top: 1em;
+}

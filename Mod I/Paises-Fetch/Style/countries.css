@@ -1,0 +1,92 @@
+div.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+}
+div.container h1{
+    color: #4b4b4b;
+}
+div.container  h2, h3{
+    font-weight: bold;
+    font-size: 40px;
+    color: #524e52;
+}
+div.container h2{
+    font-size: 18px;
+}
+div.container h3{
+    font-size: 15px;
+}
+div.container hr{
+    width: 50%;
+    margin-bottom: 2em;
+}
+div.container div.paises-box{
+    display: flex;
+    justify-content: space-around;
+}
+div.container div.paises-box div.paises-card{
+    margin: 0 1em;
+    padding: 2em;
+    width: 50%;
+    height: auto;
+    border: 1px solid rgb(173, 206, 206);
+    box-shadow: 1px 1px #8b808b;
+    border-radius: 8px;
+    background-color: rgb(173, 206, 206);
+}
+.country{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+a.add-button{
+	background: #c7dcdd;
+	color: rgb(102, 101, 102);
+	border: 0.5px outset rgb(102, 101, 102);
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 1em 1em;
+    margin-left: -0.2em;
+}
+a.add-button:hover {
+    background-color: #a4d9db;
+}
+a.remove-button{
+	background: #ff8b8b;
+	color: rgb(129, 114, 127);
+	border: 0.5px outset rgb(129, 114, 127);
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 1em 1em;
+    margin-left: -0.2em;
+}
+a.remove-button:hover{
+    background-color: #ff6b6b;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 101, 102);
+}
+ul li {
+    list-style: none;
+    margin-left: -2em;
+}
