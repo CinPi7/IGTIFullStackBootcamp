@@ -1,4 +1,4 @@
-# IGTIFullStackBootcamp
+# IGTI Full Stack Bootcamp
 IGTI exercises
 
 Here you will find all exercises of the first module of FS Bootcamp.
