@@ -1,7 +1,6 @@
 # IGTI Full Stack Bootcamp
-IGTI exercises
 
-Here you will find all exercises of the first module of FS Bootcamp.
+First Module Exercises:
 
 - Rang-RGB
 - User Search
