@@ -1,6 +1,6 @@
 # IGTI Full Stack Bootcamp
 
-First Module Exercises:
+Exercises:
 
 - Rang-RGB
 - User Search
