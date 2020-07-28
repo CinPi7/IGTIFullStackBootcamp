@@ -1,7 +1,21 @@
+Range RGB
 
-Modulo I x Desafio I -IGTI
+With HTML, CSS and Vanilla JavaScript, create an application that allows us to visualize the scale of RGB colors.
 
-Construa,   utilizando   HTML,   CSS   e   JavaScript   puro,   uma   aplicação   para   a visualização de cores a partir da escala RGB.
+- HTML,
+- CSS,
+- JavaScript,
+- Event Manipulation with JavaScript,
+- Use JavaScript and CSS functions,
+- Direct manipulation of CSS with JavaScript.
+
+Available @ https://cinrangergb.vercel.app/.
+This is the final Challenge for the first Module of IGTI Full Stack Development Bootcamp.
+
+Sincerely,
+Cinpis.
 
 
-Created by Cinpis.
+
+
+
