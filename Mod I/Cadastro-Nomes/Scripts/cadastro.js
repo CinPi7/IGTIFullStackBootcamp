@@ -1,4 +1,3 @@
-console.log("%cWelcome to my console. This is an exercise :)", "background-color: #FFDAC1; color: black");
 
 let names = []; 
 let inputName = null;
