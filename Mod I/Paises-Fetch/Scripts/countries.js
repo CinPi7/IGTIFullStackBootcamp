@@ -1,11 +1,11 @@
-let allCountriesCard = null; // tab countries
-let allCountries = []; //allcountries
-let countAllCountries = 0; // countcountries
+let allCountriesCard = null; 
+let allCountries = []; 
+let countAllCountries = 0; 
 let totalAllCountriesPopulation = 0;
 
-let favCountriesCard = null;  // tab favorites
-let favCountries = [];  //favoritecountries
-let countFavCountries = 0;  // countfavorites
+let favCountriesCard = null; 
+let favCountries = []; 
+let countFavCountries = 0;  
 let totalFavCountriesPopulation = 0;
 
 let numberFormat = null;
@@ -83,7 +83,7 @@ const renderCountryList = () => {
                     </ul>
                 </div>
             </div>
-        `; // string com button, flag and data 
+        `; 
 
         countries += showData; // concat
     });
@@ -98,7 +98,7 @@ const renderFavorites = () => {
 
     favCountries.forEach(country => {
 
-        const { id, name, population, flag, formatted} = country; // destructuring
+        const { id, name, population, flag, formatted} = country; 
         const showFavData = ` 
             <div class='country'>
                 <div class="buttons">
@@ -114,9 +114,9 @@ const renderFavorites = () => {
                     </ul>
                 </div>
             </div>
-        `; // string 
+        `; 
 
-        favorites += showFavData; // concat
+        favorites += showFavData; 
     });
 
     favorites += '</div>';
@@ -125,12 +125,10 @@ const renderFavorites = () => {
 
 const renderTotalPopulation = () => { 
 
-    /* sum of total pop */
     const totalPopulation = allCountries.reduce((accumulator, current) => {
         return accumulator + current.population;
     }, 0);
 
-    /* sum of fav total pop */
     const totalFavPopulation = favCountries.reduce((accumulator, current) => {
         return accumulator + current.population;
     }, 0);
@@ -143,9 +141,7 @@ const handleButtons = () => {
 
     const countryButtons = Array.from(allCountriesCard.querySelectorAll('.add-button'));
     const favCountryButtons = Array.from(favCountriesCard.querySelectorAll('.remove-button'));
-    // retorna objeto do DOM, então usa-se o Array
-    // console.log(countryButtons);
-    
+
     countryButtons.forEach(button => {
         button.addEventListener('click', () => {
             addToFavList(button.id);
@@ -162,7 +158,7 @@ const handleButtons = () => {
 const addToFavList = (id) => {
     const countryToAdd = allCountries.find(country => country.id === id);
 
-    favCountries = [...favCountries, countryToAdd]; // spread equal, and add the country
+    favCountries = [...favCountries, countryToAdd]; 
     favCountries.sort((a, b) => {
         return a.name.localeCompare(b.name);
     });
