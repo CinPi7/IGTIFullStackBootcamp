@@ -23,7 +23,7 @@ const preventFormSubmit = () => {
 const activateInput = () => {
 	
 	const insertName = (newName) => {
-		names = [...names, newName]; // estilo spread/rest 
+		names = [...names, newName];
 		render();
 	}
 
@@ -41,7 +41,6 @@ const activateInput = () => {
 			return; 
 		}
 
-		// assim que dá enter.. 
 		if(e.key === 'Enter'){
 			if(isEditing){
 				console.log('editing..');
