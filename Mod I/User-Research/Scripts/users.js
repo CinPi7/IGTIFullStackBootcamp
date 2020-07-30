@@ -82,10 +82,8 @@ const renderUserList = (inputName) => {
     
         users += '</div>';
         cardUsers.innerHTML = users;
-        // console.log(filterUsers.length); 
     
         allStats = filterUsers;
-        // console.log(allStats, 'full');
     }
 }
 
@@ -129,8 +127,6 @@ const renderSearchUsers = () => {
 
 const renderStats = () => {
 
-    // console.log('cheguei aqui tbm');
-
     cardStats.innerHTML = '';
     let statsElement = document.createElement('div');
 
@@ -147,7 +143,6 @@ const renderStats = () => {
             }
             return acc;
         }, 0);
-        // console.log(sumFemales, 'females');
         femaleElement.textContent = `Total female users: ${sumFemales}`;
         statsElement.appendChild(femaleElement);
         
@@ -158,7 +153,6 @@ const renderStats = () => {
             } 
             return acc;
         }, 0);
-        // console.log(sumMales, 'males');
         maleElement.textContent = `Total male users: ${sumMales}`;
         statsElement.appendChild(maleElement);
 
@@ -166,19 +160,16 @@ const renderStats = () => {
         const sumAges = allStats.reduce((acc, cur) => {
             return acc + cur.age;
         }, 0);
-        // console.log(sumAges);
         sumElement.textContent = `Sum of ages: ${sumAges}`;
         statsElement.appendChild(sumElement);
 
         let averageElement = document.createElement('div');
         let averageAge = sumAges / allStats.length;
-        // console.log(averageAge);
         averageElement.textContent = `Average age: ${averageAge}`;
         statsElement.appendChild(averageElement);
 
         let totalUsers = document.createElement('div');
         const people = sumFemales + sumMales;
-        // console.log(people);
         totalUsers.textContent = `Total of people: ${people}`;
         statsElement.appendChild(totalUsers);
     }
