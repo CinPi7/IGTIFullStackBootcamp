@@ -1,14 +1,12 @@
 
 let names = []; 
 let inputName = null;
-let isEditing = false; // boa pratica: boolean começa com is
+let isEditing = false; 
 let currentIndex = null;
 
 window.addEventListener('load', () => {
 
 	inputName = document.querySelector('#userInput'); 	
-	// permite o acesso ao input para focar o usuário na escrita
-
 	preventFormSubmit();
 	activateInput();
 });
@@ -17,7 +15,6 @@ const preventFormSubmit = () => {
 
 	const handleFormSubmittion = (e) => {
 		e.preventDefault();
-		// previne recarregar a págin sem necessidade.
 	}
 	let form = document.querySelector('form');
 	form.addEventListener('submit', handleFormSubmittion);
@@ -26,7 +23,6 @@ const preventFormSubmit = () => {
 const activateInput = () => {
 	
 	const insertName = (newName) => {
-		// names.push(newName);
 		names = [...names, newName]; // estilo spread/rest 
 		render();
 	}
@@ -39,10 +35,10 @@ const activateInput = () => {
 	const handleTyping = (e) => {
 
 		let hasText = !!e.target.value
-		&& e.target.value.trim() !== ''; // !!tem que ter valor
+		&& e.target.value.trim() !== ''; 
 
 		if (!hasText){
-			return; //nem avança
+			return; 
 		}
 
 		// assim que dá enter.. 
@@ -59,7 +55,7 @@ const activateInput = () => {
 		}
 	  }
 		inputName.addEventListener('keyup', handleTyping);
-		inputName.focus(); // coloca o cursor no input - um foco ao usuário
+		inputName.focus(); 
 	}
 
 const render = () => {
@@ -67,7 +63,7 @@ const render = () => {
 	const createCloseButton = (i) => {
 
 		const deleteName = () => {
-			names.splice(i, 1);	//remove elementos do vetor e retorna se for o caso elemento novo nesse local
+			names.splice(i, 1);
 			
 			render();
 		}
