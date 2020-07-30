@@ -1,5 +1,3 @@
-console.log("%cThis is an exercise for IGTI by Cinpis :)", "background-color: #FFDAC1; color: black");
-
 let redValue, greenValue, blueValue = 0;
 
 window.addEventListener('load', () => {
