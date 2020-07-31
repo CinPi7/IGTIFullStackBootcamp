@@ -60,25 +60,3 @@ function numberCities(){
     });
 }
 
-const longestName = [];
-
-cityNames();
-function cityNames(){
-
-    readInput.question("Qual o UF? ", sigla => {
-
-        init(sigla);
-        async function init(sigla){
-
-            const request = JSON.parse(await fs.readFile(`./States/${sigla}.json`));             
-            const organize = request.length;
-    
-            if(request.Nome)
-
-            // cityNames.push({ Nome: request.Nome, UF: request.Sigla});
-            console.log(cityNames);
-
-        }
-
-    });
-}
