@@ -57,14 +57,14 @@ function numberCities(){
                 });
 
                 //console.log(biggest);   
-                console.log(biggest.slice(0,5));
+                //console.log(biggest.slice(0,5));
 
                 smallestCities.push({ UF: sigla, number: organize});
                 const small = smallestCities.sort((a, b) => {
                     return a.number - b.number;
                 });
 
-                //console.log(small);   
+                console.log(small);   
                 console.log(small.slice(0,5));
 
                 numberCities();
@@ -93,25 +93,25 @@ function cityNames(){
     
                 const request = JSON.parse(await fs.readFile(`./States/${sigla}.json`));
     
-                request.forEach(city => {
+                request.forEach((city) => {
     
                     const organize = city.Nome.length;
         
-                    biggestName.push({UF: sigla, Nome: city.Nome, number: organize});
-                    const order = biggestName.sort((a,b) => {
-                        return b.number - a.number;
-                    });
+                    //biggestName.push({UF: sigla, Nome: city.Nome, number: organize});
+                    //const order = biggestName.sort((a,b) => {
+                    //    return b.number - a.number;
+                    //});
         
-                    const names = order.slice(0,5);
-                    console.log(names);
+                    //const names = order.slice(0,1);
+                    //console.log(names);
     
                     smallNames.push({UF: sigla, Nome: city.Nome, number: organize});
                     const small = smallNames.sort((a,b) => {
                         return a.number - b.number;
                     });
     
-                    //const snames = small.slice(0,5);
-                    //console.log(snames);
+                    const snames = small.slice(0,5);
+                    console.log(snames);
     
                     cityNames();
                 });
@@ -124,4 +124,39 @@ function cityNames(){
     });
 }
 
-//init();
+const biggestNameOfAll = [];
+const smallestNameOfAll = [];
+
+//big();
+async function big(){
+
+    try{
+
+        const read = JSON.parse(await fs.readFile('./Cidades.json'));
+
+        read.map((city) => {
+
+            const organize = city.Nome.length;
+            
+            //biggestNameOfAll.push({Nome: city.Nome, UF: city.Estado , Number: organize}); 
+            //const biggest = biggestNameOfAll.sort((a,b) => {
+            //    return b.number - a.number;
+            //});
+            //const order = biggest.slice(0,5);
+            //console.log(order);
+
+            smallestNameOfAll.push({Nome: city.Nome, UF: city.Estado, Number: organize});            
+            const small = smallestNameOfAll.sort((a,b) => {
+                return a.Number - b.Number;
+            });
+
+            const sorder = small.slice(0,10);
+            console.log(sorder);
+
+        });
+
+
+    }catch(err){
+        console.log(err);
+    }
+}
