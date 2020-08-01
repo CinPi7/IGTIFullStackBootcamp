@@ -3,6 +3,7 @@ import readLine from 'readline';
 
 let listStateCities = [];
 
+/* Creating JSON files for each state */
 // init();
 async function init(){
 
