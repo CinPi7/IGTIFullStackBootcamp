@@ -37,7 +37,7 @@ const readInput = readLine.createInterface({
 let bigCities = [];
 let smallestCities = [];
 
-numberCities();
+// numberCities();
 function numberCities(){
 
     readInput.question("Qual o UF? ", sigla => {
