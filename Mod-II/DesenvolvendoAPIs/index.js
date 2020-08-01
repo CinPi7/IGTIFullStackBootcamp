@@ -28,14 +28,16 @@ async function init(){
 }
 
 /* How many cities each Brazilian state has accordingly to the JSON files? */
+
 const readInput = readLine.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
 let bigCities = [];
+let smallestCities = [];
 
-// numberCities();
+numberCities();
 function numberCities(){
 
     readInput.question("Qual o UF? ", sigla => {
@@ -43,20 +45,83 @@ function numberCities(){
         init(sigla);
         async function init(sigla){
 
-            const request = JSON.parse(await fs.readFile(`./States/${sigla}.json`));             
-            const organize = request.length;
-            console.log(organize);
+            try{
 
-            bigCities.push({ UF: sigla, number: organize});
-            const biggest = bigCities.sort((a, b) => {
-                return b.number - a.number;
-            });
+                const request = JSON.parse(await fs.readFile(`./States/${sigla}.json`));             
+                const organize = request.length;
+                console.log(organize);
 
-            console.log(biggest);   
-            console.log(biggest.slice(0,5));
+                bigCities.push({ UF: sigla, number: organize});
+                const biggest = bigCities.sort((a, b) => {
+                    return b.number - a.number;
+                });
 
-            numberCities();
+                //console.log(biggest);   
+                console.log(biggest.slice(0,5));
+
+                smallestCities.push({ UF: sigla, number: organize});
+                const small = smallestCities.sort((a, b) => {
+                    return a.number - b.number;
+                });
+
+                //console.log(small);   
+                console.log(small.slice(0,5));
+
+                numberCities();
+
+            } catch(err){
+                console.log(err);
+            }
         }
     });
 }
 
+/* Biggest city names */
+
+let biggestName = [];
+let smallNames = [];
+
+//cityNames();  
+function cityNames(){
+
+    readInput.question("Qual o UF? ", sigla => {
+
+        try{
+
+            init(sigla);
+            async function init(sigla){
+    
+                const request = JSON.parse(await fs.readFile(`./States/${sigla}.json`));
+    
+                request.forEach(city => {
+    
+                    const organize = city.Nome.length;
+        
+                    biggestName.push({UF: sigla, Nome: city.Nome, number: organize});
+                    const order = biggestName.sort((a,b) => {
+                        return b.number - a.number;
+                    });
+        
+                    const names = order.slice(0,5);
+                    console.log(names);
+    
+                    smallNames.push({UF: sigla, Nome: city.Nome, number: organize});
+                    const small = smallNames.sort((a,b) => {
+                        return a.number - b.number;
+                    });
+    
+                    //const snames = small.slice(0,5);
+                    //console.log(snames);
+    
+                    cityNames();
+                });
+            }
+
+        } catch(err){
+            console.log(err);
+        }
+
+    });
+}
+
+//init();
