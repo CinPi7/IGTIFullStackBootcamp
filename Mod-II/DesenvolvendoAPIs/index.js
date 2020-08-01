@@ -3,7 +3,7 @@ import readLine from 'readline';
 
 let listStateCities = [];
 
-//init();
+// init();
 async function init(){
 
     try {
@@ -27,8 +27,6 @@ async function init(){
     }
 }
 
-/* How many cities each Brazilian state has accordingly to the JSON files? */
-
 const readInput = readLine.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -37,6 +35,7 @@ const readInput = readLine.createInterface({
 let bigCities = [];
 let smallestCities = [];
 
+/* How many cities each Brazilian state has accordingly to the JSON files? */
 numberCities();
 function numberCities(){
 
@@ -56,8 +55,8 @@ function numberCities(){
                     return b.number - a.number;
                 });
 
-                //console.log(biggest);   
-                //console.log(biggest.slice(0,5));
+                // console.log(biggest);   
+                // console.log(biggest.slice(0,5));
 
                 smallestCities.push({ UF: sigla, number: organize});
                 const small = smallestCities.sort((a, b) => {
@@ -81,7 +80,7 @@ function numberCities(){
 let biggestName = [];
 let smallNames = [];
 
-//cityNames();  
+// cityNames();  
 function cityNames(){
 
     readInput.question("Qual o UF? ", sigla => {
@@ -97,13 +96,13 @@ function cityNames(){
     
                     const organize = city.Nome.length;
         
-                    //biggestName.push({UF: sigla, Nome: city.Nome, number: organize});
-                    //const order = biggestName.sort((a,b) => {
+                    // biggestName.push({UF: sigla, Nome: city.Nome, number: organize});
+                    // const order = biggestName.sort((a,b) => {
                     //    return b.number - a.number;
-                    //});
+                    // });
         
-                    //const names = order.slice(0,1);
-                    //console.log(names);
+                    // const names = order.slice(0,1);
+                    // console.log(names);
     
                     smallNames.push({UF: sigla, Nome: city.Nome, number: organize});
                     const small = smallNames.sort((a,b) => {
@@ -127,7 +126,7 @@ function cityNames(){
 const biggestNameOfAll = [];
 const smallestNameOfAll = [];
 
-//big();
+// big();
 async function big(){
 
     try{
@@ -138,12 +137,12 @@ async function big(){
 
             const organize = city.Nome.length;
             
-            //biggestNameOfAll.push({Nome: city.Nome, UF: city.Estado , Number: organize}); 
-            //const biggest = biggestNameOfAll.sort((a,b) => {
+            // biggestNameOfAll.push({Nome: city.Nome, UF: city.Estado , Number: organize}); 
+            // const biggest = biggestNameOfAll.sort((a,b) => {
             //    return b.number - a.number;
-            //});
-            //const order = biggest.slice(0,5);
-            //console.log(order);
+            // });
+            // const order = biggest.slice(0,5);
+            // console.log(order);
 
             smallestNameOfAll.push({Nome: city.Nome, UF: city.Estado, Number: organize});            
             const small = smallestNameOfAll.sort((a,b) => {
