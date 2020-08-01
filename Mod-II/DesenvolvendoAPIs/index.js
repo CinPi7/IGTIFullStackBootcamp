@@ -140,7 +140,7 @@ async function big(){
             
             // biggestNameOfAll.push({Nome: city.Nome, UF: city.Estado , Number: organize}); 
             // const biggest = biggestNameOfAll.sort((a,b) => {
-            //    return b.number - a.number;
+            //    return b.Number - a.Number;
             // });
             // const order = biggest.slice(0,5);
             // console.log(order);
