@@ -134,7 +134,7 @@ async function big(){
 
         const read = JSON.parse(await fs.readFile('./Cidades.json'));
 
-        read.map((city) => {
+        read.forEach((city) => {
 
             const organize = city.Nome.length;
             
