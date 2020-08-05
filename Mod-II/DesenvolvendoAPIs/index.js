@@ -33,7 +33,6 @@ const readInput = readLine.createInterface({
     output: process.stdout
 });
 
-/* How many cities each Brazilian state has accordingly to the JSON files? */
 let bigCities = [];
 let smallestCities = [];
 
@@ -76,7 +75,6 @@ function numberCities(){
     });
 }
 
-/* Which state cities have the biggest name? And the smaller name? */
 let biggestName = [];
 let smallNames = [];
 
@@ -123,7 +121,6 @@ function cityNames(){
     });
 }
 
-/* Which Brazilian city has the biggest name? And the smallest name? */
 const biggestNameOfAll = [];
 const smallestNameOfAll = [];
 
