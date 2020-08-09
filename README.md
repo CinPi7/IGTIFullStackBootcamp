@@ -2,9 +2,9 @@
 
 # MODULE I
 
-- Rang-RGB
+- Range-RGB
 - User Search
-- Name List (to do list)
+- Name List (To do List)
 - Countries Population
 
 # MODULE II
