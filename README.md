@@ -6,3 +6,6 @@ Exercises:
 - User Search
 - Name List
 - Countries Population
+
+- States API
+- Grades API
