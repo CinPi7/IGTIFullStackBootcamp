@@ -4,7 +4,7 @@ Exercises:
 
 - Rang-RGB
 - User Search
-- Name List
+- Name List (to do list)
 - Countries Population
 
 - States API
