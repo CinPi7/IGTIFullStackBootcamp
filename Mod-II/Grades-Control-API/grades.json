@@ -384,22 +384,6 @@
       "type": "Desafio",
       "value": 45,
       "timestamp": "2020-05-19T18:21:25.284Z"
-    },
-    {
-      "id": 49,
-      "student": "Cinthia",
-      "subject": "04 - MongoDB",
-      "type": "Desafio",
-      "timestamp": "2020-08-08T22:54:07.833Z",
-      "value": 5
-    },
-    {
-      "id": 50,
-      "student": "Cinthia",
-      "subject": "04 - MongoDB",
-      "type": "Desafio 2",
-      "value": 5,
-      "timestamp": "2020-08-08T22:55:15.777Z"
     }
   ]
 }
