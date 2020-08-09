@@ -15,7 +15,7 @@ router.get("/:id", async (request, response, next) => {
       return grade.id === parseInt(request.params.id);
     });
 
-    response.status(202).send(filterGrades);
+    response.status(200).send(filterGrades);
     logger.info(`GET /grades/id`);
   } catch (err) {
     next(err);
@@ -39,7 +39,7 @@ router.get("/", async (request, response, next) => {
 
     const soma = sum(grades);
 
-    response.send({ sum: soma });
+    response.status(200).send({ sum: soma });
   } catch (err) {
     next(err);
   }
@@ -84,7 +84,7 @@ router.get("/subject/type/best", async (request, response, next) => {
       best.push(organize[i]);
     }
 
-    response.send(best);
+    response.status(200).send(best);
   } catch (err) {
     next(err);
   }
@@ -113,7 +113,7 @@ router.post("/", async (request, response, next) => {
 
     await writeFile(global.fileName, JSON.stringify(data, null, 2));
 
-    response.status(202).send(grade);
+    response.status(200).send(grade);
     logger.info(`POST /account - ${JSON.stringify(grade)}`);
   } catch (err) {
     next(err);
@@ -145,7 +145,7 @@ router.put("/:id", async (request, response, next) => {
 
     await writeFile(global.fileName, JSON.stringify(data, null, 2));
 
-    response.status(202).send(grade);
+    response.status(200).send(grade);
     logger.info(`PUT /grade ${JSON.stringify(grade)}`);
   } catch (err) {
     next(err);
@@ -171,7 +171,7 @@ router.delete("/:id", async (request, response, next) => {
     await writeFile(global.fileName, JSON.stringify(data, null, 2));
 
     response
-      .status(202)
+      .status(200)
       .send(`The id ${request.params.id} was removed successfully.`);
     logger.info(`DELETE /grade/:id ${request.params.id}`);
   } catch (err) {
