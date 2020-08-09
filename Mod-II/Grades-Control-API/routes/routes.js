@@ -6,7 +6,7 @@ import { sum, media } from "../utils/calculator.js";
 const { readFile, writeFile } = fs;
 const router = express.Router();
 
-// Request with id parameters at the endpoint, full data of a given student
+// Request with id parameters at the endpoint, full data of a given student (4)
 router.get("/:id", async (request, response, next) => {
   try {
     const data = JSON.parse(await fs.readFile(global.fileName));
@@ -22,18 +22,19 @@ router.get("/:id", async (request, response, next) => {
   }
 });
 
-// Request for the total values of a subject for a given student
+// Request for the total grade of a subject for a given student (5)
 router.get("/", async (request, response, next) => {
   let params = request.body;
 
   try {
     const data = JSON.parse(await fs.readFile(global.fileName));
-    const grades = data.grades.filter((grade) =>
+    const grades = data.grades.filter(
+      (grade) =>
         grade.student === params.student && grade.subject === params.subject
     );
 
     if (!grades || !grades.length) {
-      throw new Error('GET - grades not found');
+      throw new Error("GET - grades not found");
     }
 
     const soma = sum(grades);
@@ -44,7 +45,52 @@ router.get("/", async (request, response, next) => {
   }
 });
 
-// Create new Input
+// Request average of a subject acordingly with a type (6)
+router.get("/subtype/average", async (request, response, next) => {
+  let params = request.body;
+
+  try {
+    const data = JSON.parse(await fs.readFile(global.fileName));
+    const grades = data.grades.filter(
+      (grade) => grade.type === params.type && grade.subject === params.subject
+    );
+
+    if (!grades || !grades.length) {
+      throw new Error("GET - grades not found");
+    }
+
+    const average = media(grades);
+
+    response.send({ average: average });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Request the 3 best grades accordingly with a given type and subject (7)
+router.get("/subject/type/best", async (request, response, next) => {
+  let params = request.body;
+
+  try {
+    const data = JSON.parse(await fs.readFile(global.fileName));
+    const grades = data.grades.filter(
+      (grade) => grade.type === params.type && grade.subject === params.subject
+    );
+
+    let best = [];
+    const organize = grades.sort((a, b) => b.value - a.value);
+
+    for (let i = 0; i < 3; i++) {
+      best.push(organize[i]);
+    }
+
+    response.send(best);
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Create new Input (1)
 router.post("/", async (request, response, next) => {
   try {
     let grade = request.body;
@@ -74,7 +120,7 @@ router.post("/", async (request, response, next) => {
   }
 });
 
-// Update values from an id
+// Update values from an id (2)
 router.put("/:id", async (request, response, next) => {
   try {
     const grade = request.body;
@@ -106,7 +152,7 @@ router.put("/:id", async (request, response, next) => {
   }
 });
 
-// Delete
+// Delete (3)
 router.delete("/:id", async (request, response, next) => {
   try {
     const grade = request.body;

@@ -5,9 +5,8 @@ export function sum(array){
     }, 0);
     return sum;
 }
-
 export function media(array){
-    const sum = sum(array);
-    const media = sum / array.length;
+    const summe = sum(array);
+    const media = summe / array.length;
     return media;
 }
