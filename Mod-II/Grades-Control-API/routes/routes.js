@@ -40,6 +40,7 @@ router.get("/", async (request, response, next) => {
     const soma = sum(grades);
 
     response.status(200).send({ sum: soma });
+    logger.info(`GET /`);
   } catch (err) {
     next(err);
   }
@@ -62,6 +63,7 @@ router.get("/subtype/average", async (request, response, next) => {
     const average = media(grades);
 
     response.send({ average: average });
+    logger.info(`GET /subtype/average`);
   } catch (err) {
     next(err);
   }
@@ -85,6 +87,7 @@ router.get("/subject/type/best", async (request, response, next) => {
     }
 
     response.status(200).send(best);
+    logger.info(`GET /subject/type/best`);
   } catch (err) {
     next(err);
   }
