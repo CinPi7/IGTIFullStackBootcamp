@@ -11,10 +11,6 @@ With HTML, CSS and Vanilla JavaScript, create an application that allows us to v
 
 This is the final Challenge for the first Module of IGTI Full Stack Development Bootcamp.
 
-Sincerely,
-Cinpis.
-
-
 
 
 
