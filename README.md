@@ -2,16 +2,16 @@
 
 # MODULE I
 
-- Range-RGB
-- User Search
-- Name List (To do List)
-- Countries Population
-
-JavaScript Puro.
+- Range RGB (Vanilla JavaScript)
+- User Search (Vanilla JavaScript)
+- Name List (To do List - Vanilla JavaScript)
+- Countries Population (Vanilla JavaScript)
 
 # MODULE II
 
-- States API
-- Grades API
+- States API (Node.js)
+- Grades API (Node.js)
 
-Node.js
+# Module III
+
+- React Class Component
