@@ -2,7 +2,7 @@
 
 App em React.js utilizando Class Component.
 
-Faz o cálculo de Salário Líquido, considerando a CLT.
+Faz o cálculo de Salário Líquido, a partir do Desconto do INSS, Desconto do IRRF do salário bruto (input).
 
 # ScreenShot
 
