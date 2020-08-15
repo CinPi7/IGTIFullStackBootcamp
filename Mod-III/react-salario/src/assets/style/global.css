@@ -1,0 +1,36 @@
+:root{
+    --background: #e4e4eb;
+    --primary-color: #e0d5d5;
+    --gray:#333333;
+    --green: #62bd97;
+    --orange: #edb158;
+    --red: #94330c;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.principal-style h1, h2, h3 {
+    margin-top: 1em;
+    color: var(--gray);
+    font-family: 'Raleway', sans-serif;
+}

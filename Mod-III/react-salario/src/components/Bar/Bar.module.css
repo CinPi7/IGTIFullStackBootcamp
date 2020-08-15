@@ -1,0 +1,25 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+}
+
+.line{
+    margin-top: 3em;
+}
+
+.line p {
+    margin-top: 1em;
+}
+
+.inss{
+    color: #e0904a;
+}
+
+.irrf{
+   color: #d67054;
+}
+
+.liquido {
+    color: #0ec4a0;
+}
