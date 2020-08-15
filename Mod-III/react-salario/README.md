@@ -1,4 +1,4 @@
 App em React.js utilizando Class Component.
 
-Faz o cálculo de Salário Líquido, considerando a CLT, zero dependentes e zero discontos. 
+Faz o cálculo de Salário Líquido, considerando a CLT.
 
