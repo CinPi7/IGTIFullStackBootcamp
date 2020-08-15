@@ -15,4 +15,3 @@ This application is the result of the last challenge from the first Module of IG
 
 # SreenShot
 
-![To Do List](https://github.com/CINPIS/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/todo.png?raw=true "Optional Title")
