@@ -1,7 +1,7 @@
 
 
 
-User Search Application @ https://cinuserssearch.vercel.app/
+User Search Application 
 
 Create an application to filter users and show statistics from this defined filter:
 
