@@ -2,8 +2,10 @@
 
 React aplication using React Component.
 
-Faz o cálculo de Salário Líquido a partir do Desconto do INSS e Desconto do IRRF de acordo com o salário bruto (input).
+Faz o cálculo de Salário Líquido a partir do Desconto do INSS e Desconto do IRRF de acordo com o salário bruto (input). 
 Normas 2020 CLT.
+Há uma barra relacionando a porcentagem destes descontos e o salário líquido.
+
 
 # ScreenShot
 
