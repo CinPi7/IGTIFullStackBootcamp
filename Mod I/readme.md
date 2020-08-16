@@ -1,4 +1,4 @@
-MODULE I
+# MODULE I
 
 Some exercises with JavaScript.
 
