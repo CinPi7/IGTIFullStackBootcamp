@@ -1,6 +1,12 @@
-# Activity 
+Countries Fetch
 
-This a solution for an exercise from Module I of IGTI :)
+Create an application to filter selected countries and show statistics from it as total population:
+
+    Declare HTML elements, such as titles, input, divs, span, ul, li, etc,
+    DOM manipulation with JavaScript,
+    CSS customization,
+    Calculate the statistics using array methods,
+    Do the HTTP request using fetch.
 
 # ScreenShot
 
