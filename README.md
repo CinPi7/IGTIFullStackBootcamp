@@ -2,10 +2,10 @@
 
 # MODULE I
 
-- Range RGB (Vanilla JavaScript)
-- User Search (Vanilla JavaScript)
-- Name List (To do List - Vanilla JavaScript)
-- Countries Population (Vanilla JavaScript)
+- Range RGB (JavaScript)
+- User Search (JavaScript)
+- Name List (To do List - JavaScript)
+- Countries Population (JavaScript)
 
 # MODULE II
 
