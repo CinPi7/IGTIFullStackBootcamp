@@ -1,8 +1,9 @@
-# React Component
+# React - React Component
 
-App em React.js utilizando Class Component.
+React aplication using React Component.
 
-Faz o cálculo de Salário Líquido, a partir do Desconto do INSS, Desconto do IRRF do salário bruto (input).
+Faz o cálculo de Salário Líquido a partir do Desconto do INSS e Desconto do IRRF de acordo com o salário bruto (input).
+Normas 2020 CLT.
 
 # ScreenShot
 
