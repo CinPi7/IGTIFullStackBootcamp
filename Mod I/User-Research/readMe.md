@@ -15,3 +15,4 @@ This application is the result of the last challenge from the first Module of IG
 
 # SreenShot
 
+!User Search](https://github.com/CINPIS/IGTIFullStackBootcamp/blob/master/Mod%20I/User-Research/user-search.png "Optional title")
