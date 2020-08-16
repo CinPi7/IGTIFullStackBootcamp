@@ -1,4 +1,4 @@
-# React - React Component
+# React.JS - React Component
 
 React aplication using React Component.
 
