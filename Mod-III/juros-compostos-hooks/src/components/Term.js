@@ -26,7 +26,7 @@ export default function Term({ data }) {
   return (
     <div className="col s2">
       <div style={{ paddingLeft: "10px" }} className="z-depth-1">
-        <div className="row card s12 m8">
+        <div className="row card s12 m8  grey lighten-4">
           <div style={classBold} className="col">
             {id}
           </div>

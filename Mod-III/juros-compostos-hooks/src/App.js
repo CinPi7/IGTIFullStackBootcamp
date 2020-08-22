@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1 className="center">Compound Interest</h1>
+      <h1 className="center teal-text">Compound Interest</h1>
       <Form onChanges={onChanges} data={{ capital, interestRate, time }} />
       <Terms data={terms} />
     </div>

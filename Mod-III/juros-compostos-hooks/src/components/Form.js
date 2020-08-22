@@ -33,7 +33,7 @@ export default function Form({ data, onChanges }) {
         />
         <Input
           id="time"
-          label="Set Time in Months"
+          label="Months"
           value={time}
           constraints={{ min: "1", max: "36", step: "1" }}
           onInputChange={onTermsChange}
