@@ -15,5 +15,5 @@
 
 # Module III
 
-- React Class Component
-- React Hooks
+- React Class Component: Salário Líquido
+- React Hooks: Juros Compostos
