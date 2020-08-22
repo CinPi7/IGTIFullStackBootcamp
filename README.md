@@ -16,6 +16,6 @@
 # Module III
 
 - React Class Component: Salário Líquido
-- React Hooks: Juros Compostos ( Available @ https://igtif-ull-stack-bootcamp.vercel.app/ )
+- React Hooks: Juros Compostos ( Available @ https://compound-interest-sigma.vercel.app/ )
 
 
