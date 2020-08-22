@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Form from './components/Form';
-import Terms from './components/Terms';
+import React, { useState, useEffect } from "react";
+import Form from "./components/Form";
+import Terms from "./components/Terms";
 
 export default function App() {
-
   const [capital, setCapital] = useState(0);
   const [interestRate, setInterestRate] = useState(0);
   const [time, setTime] = useState(0);
@@ -13,8 +12,8 @@ export default function App() {
     const newTerms = [];
 
     for (let i = 1; i <= time; i++) {
-      let total = (capital * (((interestRate / 100) + 1) ** i)).toFixed(2);
-      let percentage = (Math.pow(1 + interestRate / 100, i) - 1) * 100 ;
+      let total = (capital * (interestRate / 100 + 1) ** i).toFixed(2);
+      let percentage = (Math.pow(1 + interestRate / 100, i) - 1) * 100;
 
       newTerms.push({
         id: i,
@@ -39,9 +38,9 @@ export default function App() {
     }
 
     if (newTime !== null) {
-      setTime(newTime)
+      setTime(newTime);
     }
-  }
+  };
 
   return (
     <div className="container">
