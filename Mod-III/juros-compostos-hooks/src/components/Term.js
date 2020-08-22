@@ -4,16 +4,15 @@ const currencyFormatter = Intl.NumberFormat('pt-BR', {
     style: 'currency', currency: 'BRL'
 });
 
-const percentageFormatter = Intl.NumberFormat('pt-BR', {
-    style: 'percent', maximunFractionDigits: 2
-});
-
 function formatCurrency(value){
     return currencyFormatter.format(value);
 }
 
 function formatPercentage(value){
-    return percentageFormatter.format(value);
+    if (value){
+        return `${value.toFixed(2).replace(".",".")}%`
+    }
+    return "";
 }
 
 export default function Term({ data }) {

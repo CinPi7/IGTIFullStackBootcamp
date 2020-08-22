@@ -14,7 +14,7 @@ export default function App() {
 
     for (let i = 1; i <= time; i++) {
       let total = (capital * (((interestRate / 100) + 1) ** i)).toFixed(2);
-      let percentage = total > 0 ? (total / capital) - 1 : 0;
+      let percentage = (Math.pow(1 + interestRate / 100, i) - 1) * 100 ;
 
       newTerms.push({
         id: i,
