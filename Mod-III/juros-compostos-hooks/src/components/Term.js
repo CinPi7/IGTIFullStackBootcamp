@@ -24,7 +24,7 @@ export default function Term({ data }) {
   let classBold = { fontWeight: 800 };
 
   return (
-    <div className="col s2">
+    <div className="col s4">
       <div style={{ paddingLeft: "10px" }} className="z-depth-1">
         <div className="row card s12 m8  grey lighten-4">
           <div style={classBold} className="col">
