@@ -16,3 +16,4 @@
 # Module III
 
 - React Class Component
+- React Hooks
