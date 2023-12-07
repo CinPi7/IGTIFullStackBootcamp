@@ -1,0 +1,28 @@
+header.header-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 2rem;
+  justify-content: space-between;
+}
+
+header > h1 {
+  font-size: 42px;
+}
+
+div.date-reference {
+  background-color: #c6cdd6;
+  border-radius: 10px;
+
+  height: 2.5rem;
+  width: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.6px;
+}

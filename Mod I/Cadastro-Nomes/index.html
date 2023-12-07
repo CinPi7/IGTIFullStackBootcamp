@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8"/>
-	<title>Cadastro de Nomes</title>
-	<meta name="description" content="Aula 05 IGTI">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TO DO LISTS</title>
+    <meta name="name-register" content="Aula 05 IGTI" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
-	
-	<link rel="stylesheet" type="text/css" href="./Style/cadastro.css">
-	<link rel="stylesheet" href="./Style/main.css">
-	<link rel="stylesheet" href="./Style/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@300;400;500;800&family=PT+Serif:wght@400;700&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="./assets/e.png" rel="icon">
-    
-</head>
-<body>
-  <div class="container">
-		<header class="titulo">
-			<h1>To Do List</h1>
-		</header>
-		 <hr>
-		<main role="main">	
-			<!-- Formulário -->
-			<form action="">
-				<label for=""> Nome: 
-					<input 
-						type="text" 
-						placeholder="Adicione um item ou edite ele aqui" 
-						name="Add Item" 
-						id="userInput"
-					/>
-				</label>
-			</form>
-			<!-- Lista -->
-			<h2>Itens cadastrados até o momento: </h2>
-			<div id="nomes">
-				
-			</div>
-		</main>
-  </div> 
-<script type="text/javascript" src="./Scripts/cadastro.js"></script>
-</body>
+    <link rel="stylesheet" href="./Style/header.css" />
+    <link rel="stylesheet" type="text/css" href="./Style/cadastro.css" />
+    <link rel="stylesheet" href="./Style/main.css" />
+    <link rel="stylesheet" href="./Style/media.css" />
+
+    <link href="./assets/asterisk.png" rel="icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-intro">
+        <h1>To Do List</h1>
+        <div class="date-reference">
+          <p id="date"></p>
+        </div>
+      </header>
+
+      <main role="main" class="main">
+        <div class="list">
+          <form>
+            <legend>MUST DO TODAY</legend>
+            <label for="userInput"></label>
+
+            <input
+              type="text"
+              placeholder="Add an item to the list..."
+              name="userInput"
+              id="userInput"
+            />
+          </form>
+          <h2>What I have here...</h2>
+          <div id="listItems" class="list-items">
+            <ul>
+              <li>Fazer uma página web e listar o que deve ser feito hoje.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./Scripts/cadastro.js"></script>
+    <script src="./Scripts/date.js"></script>
+  </body>
 </html>

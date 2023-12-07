@@ -1,62 +1,96 @@
-/* Styles */
-.container {
-	display: block;
-	background-color: #d5e0e0;	
-	width: 60%;
-	height: auto;
-	border: 1px solid rgb(227, 236, 224);
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px rgb(223, 222, 222);
-	padding: 0.5em 3em 0.5em 3em;
+main div.list {
+  border: 1px solid #dbccc2;
+  background-color: #e7d4d5;
+  border-radius: 14px;
+  max-width: 1500px;
+  margin: 5rem;
+  padding: 3rem;
 }
-h1 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: lighter;
+
+form legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
 }
-hr{
-	color: #a0a0a0;
-	margin-bottom: 2em;
+
+main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-main form label{
-	font-weight: 500;
-	outline: none;
+
+main form input {
+  height: 36px;
+  width: auto;
+  min-width: 100%;
+
+  margin-top: 1rem;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+
+  border: 1px solid #dbccc2;
+  border-radius: 6px;
+  border-bottom: 1px solid #c1c1;
+  background-color: var(--background-color);
 }
-main form input{
-	height: 30px;
-	width: 60%;
-	margin-left: 0.5em;
-	padding: 0.5em;
-	border: 1px solid rgb(182, 164, 164);
-	border-radius: 5px;
+
+main div.list-items ul li {
+  border-bottom: 1px solid #1212;
+
+  display: flex;
+  align-items: center;
+  margin: 0.7rem 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-main h2{
-	font-size: 16px;
+
+main h2 {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+
+  margin: 1rem 0;
 }
-button{
-	margin-right: 5px;
-	background: #e96e6e;
-	color: #ffffff;
-	border: 0.5px outset rgb(182, 164, 164);
-	cursor: pointer;
-	transition: 0.3s;
-	border-radius: 50%;
-	height: 20px;
-	width: 20px;
-	padding: 0.15em 0 1em 0;
+
+button {
+  margin-right: 5px;
+  background: #e96e6e;
+  color: #ffffff;
+  border: 0.5px outset rgb(182, 164, 164);
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-ul{
-	margin-left: 1em;
-	line-height: 25px;
-	cursor: pointer;
-	display: block;
-	color: #5f6961;
-	font-size: 12px;
-	list-style-type: none;
+
+ul {
+  line-height: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: #5f6961;
+  font-size: 12px;
+  list-style-type: none;
 }
+
 ul li:hover {
-	color: #131414;
-} 
+  color: #131414;
+}
+
 ul button:hover {
-	background-color: #f19898;
+  background-color: #f19898;
 }
