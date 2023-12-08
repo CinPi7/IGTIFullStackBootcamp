@@ -7,6 +7,7 @@
 
 ![To do List](https://github.com/CINPIS/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-listItems/todolist.png "To Do List")
 
-![alt text for screen readers]([/assets/presentation.png](https://github.com/CinPi7/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/assets/presentation.png)https://github.com/CinPi7/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/assets/presentation.png "presentation")
+![todopresentation](https://github.com/CinPi7/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/assets/presentation.png "Optional title")
 
-![alt text for screen readers](/assets/using.png "presentation")
+
+![presentation]([/assets/using.png](https://github.com/CinPi7/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/assets/using.png)https://github.com/CinPi7/IGTIFullStackBootcamp/blob/master/Mod%20I/Cadastro-Nomes/assets/using.png "presentation")
