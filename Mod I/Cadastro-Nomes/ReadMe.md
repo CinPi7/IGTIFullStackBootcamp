@@ -1,7 +1,7 @@
 # Activity
 
     This solution is for DOM Listener Events.
-    A to do list.
+    A To Do list, where I can add new items, and remove them later. It has a date mark to let you write items that must be done today.
 
 # ScreenShot
 
