@@ -1,6 +1,6 @@
 # Activity
 
-<p style={font-size: 32px;}>A To Do list, where I can add new items, and remove them later. </p>
+<p font-size:32px;>A To Do list, where I can add new items, and remove them later. </p>
 
 <p style={font-size: 32px;}>It has a date mark to let you write items that must be done today. </p>
 
