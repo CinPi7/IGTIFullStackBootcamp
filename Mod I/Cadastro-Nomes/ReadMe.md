@@ -2,7 +2,7 @@
 
 <p font-size:32px;>A To Do list, where I can add new items, and remove them later. </p>
 
-<p style={font-size: 32px;}>It has a date mark to let you write items that must be done today. </p>
+<p style="color: #f2cf4a; font-family: Babas; font-size: 2em;"> It has a date mark to let you write items that must be done today. </p>
 
 This solution is for DOM Listener Events.
 
